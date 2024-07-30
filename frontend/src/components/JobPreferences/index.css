@@ -1,0 +1,211 @@
+
+  
+  .radio-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .desired-salary-inputs-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+  }
+  
+  .form-job-preferences {
+    padding: 40px;
+    background-color: aliceblue;
+    font-family: 'Roboto';
+  }
+  /* General form styling */
+.form {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Fields container styling */
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Individual input field styling */
+.input-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-field label {
+  font-weight: bold;
+  color: #555;
+}
+
+.input-field select,
+.input-field input,
+.input-field textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.input-field textarea {
+  resize: vertical;
+}
+
+/* Salary inputs container */
+.desired-salary-inputs-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+
+/* Radio buttons */
+.radio-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.radio-buttons div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Select components */
+.ReactSelect__control {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.ReactSelect__control--is-focused {
+  border-color: #0056b3;
+  box-shadow: 0 0 0 1px rgba(0, 86, 179, 0.2);
+}
+
+.ReactSelect__menu {
+  border-radius: 4px;
+}
+
+/* Additional preferences */
+textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+textarea:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+/* Select menu styles */
+.Select__menu {
+  z-index: 10;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .desired-salary-inputs-container {
+    flex-direction: column;
+  }
+
+  .radio-buttons {
+    flex-direction: column;
+  }
+}
+.input-field {
+  margin-bottom: 20px;
+}
+
+.desired-salary-inputs-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Space between elements */
+}
+
+.currency-select-container,
+.desired-salary-inputs-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  margin-bottom: 5px; /* Space between label and input */
+}
+
+select,
+input[type="number"] {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+/* Optional: Adjust width of input fields */
+input[type="number"] {
+  width: 120px;
+}
+
+/* Container for radio buttons */
+.radio-buttons {
+  display: flex;
+flex-direction: row;
+  flex-wrap: row; /* Allows radio buttons to wrap to a new line when the row is full */
+  gap: 16px; /* Space between each radio button group */
+  margin-top: 10px; /* Space above the radio button container */
+}
+
+.radio-buttons div {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between radio button and label */
+  width: calc(25% - 12px); /* Ensures 4 radio buttons per row (adjust -12px based on gap) */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.radio-buttons input[type="radio"] {
+  accent-color: #0056b3; /* Custom color for the radio button (optional) */
+  width: 16px; /* Size of the radio button */
+  height: 16px; /* Size of the radio button */
+}
+
+.radio-buttons label {
+  font-size: 16px; /* Font size for the labels */
+  margin: 0;
+  color: #333; /* Font color for the labels */
+  cursor: pointer; /* Pointer cursor for labels to indicate they are clickable */
+}
+
+.radio-buttons input[type="radio"]:focus {
+  outline: 2px solid #0056b3; /* Outline color when radio button is focused */
+  outline-offset: 2px; /* Space between outline and the radio button */
+}
+
+.radio-buttons input[type="radio"]:checked {
+  accent-color: #0056b3; /* Custom color for the checked state (optional) */
+}
+
+.radio-buttons input[type="radio"]:disabled {
+  accent-color: #ccc; /* Color for disabled state (optional) */
+}

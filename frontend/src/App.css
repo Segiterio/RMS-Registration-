@@ -1,0 +1,125 @@
+/* App.css */
+.app {
+  display: flex;
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 20%;
+  background-color: #8b4646;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto; /* Allows scrolling in sidebar if content overflows */
+  z-index: 1000; /* Ensures sidebar stays on top */
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar-item:hover {
+  background-color: #a05555;
+}
+
+.sidebar-item.active {
+  background-color: #6d3636;
+}
+
+.sidebar-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.sidebar-item.active .sidebar-icon {
+  background-color: #fff;
+  color: #6d3636;
+}
+
+.sidebar-text {
+  font-size: 14px;
+}
+
+.main-content {
+  margin-left: 20%; /* Matches sidebar width */
+  padding: 20px;
+  width: 80%;
+  overflow-y: auto; /* Allows vertical scrolling */
+  min-height: 100vh;
+}
+
+.breadcrumb {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.navigation-buttons {
+  margin-top: 20px;
+}
+
+.prev-button,
+.next-button {
+  padding: 10px 20px;
+  background-color: #8b4646;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: #6d3636;
+}
